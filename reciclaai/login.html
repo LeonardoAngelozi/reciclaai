@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recicla Ai</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+
+      <!-- Logo -->
+      <div class="fadeIn first">
+        <img class="py-5" src="img/LogoVerdePNG.png" id="icon" alt="User Icon" />
+      </div>
+
+      <!-- Login Form -->
+      <form>
+        <input type="text" id="email" class="fadeIn second" placeholder="Email">
+        <input type="text" id="senha" class="fadeIn third" placeholder="Senha">
+        <a class="btn btn-primary fadeIn fourth  my-3 px-5" href="index.html">Entrar</a>
+      </form>
+
+      <!-- Esqueceu a senha -->
+      <div id="formFooter">
+        <div>
+          <small class="form-text text-muted">Ainda não possui cadastro? <a class="text-primary underlineHover" href="#" data-bs-toggle="modal" data-bs-target="#modalCadastro">Clique aqui.</a></small>
+        </div>
+        <div>
+          <small><a class="text-primary underlineHover" href="#">Esqueci minha senha</a></small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL CADASTRO -->
+  <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCadastroTitulo">Cadastre-se</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <nav class="nav btn-group" id="tipoCadastro" role="tablist">
+            <button type="button" class="btn btn-success btn-sm active" id="fisica-tab" data-bs-toggle="tab" data-bs-target="#fisica" role="tab" aria-controls="fisica" aria-selected="true">Pessoa física</button>
+
+            <button type="button" class="btn btn-success btn-sm" id="juridica-tab" data-bs-toggle="tab" data-bs-target="#juridica" role="tab" aria-controls="juridica" aria-selected="false">Pessoa jurídica</button>
+          </nav>
+
+          <div class="tab-content" id="tipoCadastroConteudo">
+
+            <!-- Tab pessoa física -->
+            <div class="tab-pane fade show active mt-2" id="fisica" role="tabpanel" aria-labelledby="fisica-tab">
+              <div class="row mt-3">
+                <div class="col-6">
+                  <label for="inputNome">Nome</label>
+                  <input type="email" class="form-control form-control-md" id="inputNome" placeholder="Primeiro nome">
+                </div>
+                <div class="col-6">
+                  <label for="inputNome">Sobrenome</label>
+                  <input type="email" class="form-control form-control-md" id="inputSobrenome" placeholder="Sobrenome completo">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6">
+                  <label for="inputDataNascimento">Data de nascimento</label>
+                  <input type="date" class="form-control form-control-md" id="inputDataNascimento" placeholder="DD/MM/AAAA">
+                </div>
+                <div class="col-6">
+                  <label for="inputCPF">CPF</label>
+                  <input type="email" class="form-control form-control-md" id="inputCPF" placeholder="xxx.xxx.xxx-xx">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-4">
+                  <label for="inputCEP">CEP</label>
+                  <input type="email" class="form-control form-control-md" id="inputCEP" placeholder="xxxxx-xxx">
+                </div>
+                <div class="col-5">
+                  <label for="inputCidade">Cidade</label>
+                  <input type="email" class="form-control form-control-md" id="inputCidade">
+                </div>
+                <div class="col-3">
+                  <label for="inputEstado">Estado</label>
+                  <select class="form-select form-control-md" id="inputEstado">
+                    <option selected>Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12">
+                  <label for="inputLogradouro">Logradouro</label>
+                  <input type="email" class="form-control form-control-md" id="inputLogradouro">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-7">
+                  <label for="inputBairro">Bairro</label>
+                  <input type="email" class="form-control form-control-md" id="inputBairro">
+                </div>
+                <div class="col-2">
+                  <label for="inputNro">Nº</label>
+                  <input type="email" class="form-control form-control-md" id="inputNro">
+                </div>
+                <div class="col-3">
+                  <label for="inputComplemento">Complemento</label>
+                  <input type="email" class="form-control form-control-md" id="inputComplemento" placeholder="Ex.: Casa">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12">
+                  <label for="inputEmail">E-mail</label>
+                  <input type="email" class="form-control form-control-md" id="inputEmail">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12">
+                  <label for="inputConfirmarEmail">Confirme seu e-mail</label>
+                  <input type="email" class="form-control form-control-md" id="inputConfirmarEmail">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6">
+                  <label for="inputSenha">Senha</label>
+                  <input type="password" class="form-control form-control-md" id="inputSenha" placeholder="********">
+                </div>
+                <div class="col-6">
+                  <label for="inputConfirmarSenha">Confirme sua senha</label>
+                  <input type="password" class="form-control form-control-md" id="inputConfirmarSenha" placeholder="********">
+                </div>
+              </div>
+            </div>
+            <!-- Fim Tab pessoa física -->
+
+            <!-- Tab pessoa jurídica -->
+            <div class="tab-pane fade" id="juridica" role="tabpanel" aria-labelledby="juridica-tab">
+
+              <div class="row mt-3">
+                <div class="col-9">
+                  <label for="inputRazaoSocial">Razão social</label>
+                  <input type="email" class="form-control form-control-md" id="inputRazaoSocial">
+                </div>
+                <div class="col-3">
+                  <label for="inputInscricaoEstadual">I/E</label>
+                  <input type="email" class="form-control form-control-md" id="inputInscricaoEstadual">
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-7">
+                  <label for="inputNomeFantasia">Nome fantasia</label>
+                  <input type="email" class="form-control form-control-md" id="inputFantasia">
+                </div>
+                <div class="col-5">
+                  <label for="inputCNPJ">CNPJ</label>
+                  <input type="email" class="form-control form-control-md" id="inputCNPJ" placeholder="xx.xxx.xxx/xxxx-xx">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-4">
+                  <label for="inputCEP">CEP</label>
+                  <input type="email" class="form-control form-control-md" id="inputCEP" placeholder="xxxxx-xxx">
+                </div>
+                <div class="col-5">
+                  <label for="inputCPF">Cidade</label>
+                  <input type="email" class="form-control form-control-md" id="inputCPF">
+                </div>
+                <div class="col-3">
+                  <label for="inputEstado">Estado</label>
+                  <select class="form-select form-control-md" id="inputEstado">
+                    <option selected>Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12">
+                  <label for="inputLogradouro">Logradouro</label>
+                  <input type="email" class="form-control form-control-md" id="inputLogradouro">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-7">
+                  <label for="inputBairro">Bairro</label>
+                  <input type="email" class="form-control form-control-md" id="inputBairro">
+                </div>
+                <div class="col-2">
+                  <label for="inputNro">Nº</label>
+                  <input type="email" class="form-control form-control-md" id="inputNro">
+                </div>
+                <div class="col-3">
+                  <label for="inputComplemento">Complemento</label>
+                  <input type="email" class="form-control form-control-md" id="inputComplemento" placeholder="Ex.: Casa">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12">
+                  <label for="inputEmail">E-mail</label>
+                  <input type="email" class="form-control form-control-md" id="inputEmail">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12">
+                  <label for="inputConfirmarEmail">Confirme seu e-mail</label>
+                  <input type="email" class="form-control form-control-md" id="inputConfirmarEmail">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6">
+                  <label for="inputSenha">Senha</label>
+                  <input type="password" class="form-control form-control-md" id="inputSenha" placeholder="********">
+                </div>
+                <div class="col-6">
+                  <label for="inputConfirmarSenha">Confirme sua senha</label>
+                  <input type="password" class="form-control form-control-md" id="inputConfirmarSenha" placeholder="********">
+                </div>
+              </div>
+
+            </div>
+            <!-- Fim tab pessoa jurídica -->
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success">Cadastre-se</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL CADASTRO -->
+
+  <script type=" text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recicla Ai</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top py-3 box-shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="img/LogoBrancaPNG.png" style="height: 40px;" alt="Recicla Ai"></a>
+      <form class="d-flex ms-5 col-md-3">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar no ReciclaAi" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-5 dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Wesley
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Perfil</h6>
+              <li><a class="dropdown-item" href="#">Acessibilidade</a></li>
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="login.html">Sair</a></li>
+            </ul>
+          </li>
+          <li class="nav-item iconesMenu active">
+            <a href="index.html"><img src="img/homenovo.png" alt=""></a>
+          </li>
+          <li class="nav-item iconesMenu dropdown">
+            <a href="#" id="navbarDropdownNovo" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/addnovo.png" alt=""></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Adicionar</h6>
+              <li><a class="dropdown-item iconeDropdown" href="adicionarcaminhao.html">Caminhão</a></li>
+              <li><a class="dropdown-item" href="adicionarcacamba.html">Caçamba</a></li>
+            </ul>
+          </li>
+          <li class="nav-item iconesMenu dropdown">
+            <a href="#" id="navbarDropdownNovo" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/buscanovo.png" alt=""></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Procurar</h6>
+              <li><a class="dropdown-item iconeDropdown" href="procurarcaminhao.html">Caminhão</a></li>
+              <li><a class="dropdown-item" href="procurarcacamba.html">Caçamba</a></li>
+            </ul>
+          </li>
+          <li class="nav-item iconesMenu">
+            <a href="#"><img src="img/notificacoesnovo.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Fim header -->
+
+  <!-- Inicio conteúdo -->
+  <section class="pt-5 bg-light text-center container-fluid h-100 d-inline-block">
+    <div>
+      <span class="h6 d-block">ACOMPANHE A COLETA EM TEMPO REAL</span>
+      <h2 class="display-5 text-primary">Próxima coleta no seu bairro: hoje às 13:30</h2>
+    </div>
+    <div class="row my-5 col d-flex justify-content-center box-shadow">
+      <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14650.015140151349!2d-51.94744495!3d-23.3699855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1622862867341!5m2!1spt-BR!2sbr" width="1900" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  <!-- Fim conteúdo -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="bg-primary text-center text-white py-3">
+      <p>ReciclaAi © 2021. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+  <!-- Fim footer -->
+
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
